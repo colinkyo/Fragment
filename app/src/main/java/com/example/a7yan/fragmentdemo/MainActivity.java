@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.btn1:
                 intent=new Intent(this,FragmentPassVuale.class);
                 break;
+            case R.id.btn2:
+                intent=new Intent(this,FragmentPassValue.class);
+                break;
         }
         startActivity(intent);
         //Toast.makeText(this, "找得到我啊!", Toast.LENGTH_SHORT).show();

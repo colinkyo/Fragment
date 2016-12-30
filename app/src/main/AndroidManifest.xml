@@ -15,8 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CreateFragment"></activity>
-        <activity android:name=".FragmentPassVuale"></activity>
+        <activity android:name=".CreateFragment" />
+        <activity android:name=".FragmentPassVuale" />
+        <activity android:name=".FragmentPassValue"></activity>
     </application>
 
 </manifest>

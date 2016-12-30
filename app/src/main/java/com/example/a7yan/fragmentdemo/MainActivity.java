@@ -16,8 +16,18 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         btn = (Button) findViewById(R.id.btn);
     }
-    public void click(View view){
-        Intent intent=new Intent(this,CreateFragment.class);
+    public void click(View view)
+    {
+        Intent intent=null;
+        switch (view.getId())
+        {
+            case R.id.btn:
+                intent=new Intent(this,CreateFragment.class);
+                break;
+            case R.id.btn1:
+                intent=new Intent(this,FragmentPassVuale.class);
+                break;
+        }
         startActivity(intent);
         //Toast.makeText(this, "找得到我啊!", Toast.LENGTH_SHORT).show();
     }
